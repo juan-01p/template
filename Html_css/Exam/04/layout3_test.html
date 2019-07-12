@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            text-align: center;
+           
+        }
+
+        .column {
+            float: left;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .column.side {
+            width: 25%;
+        }
+
+        .column.middle {
+            width: 50%;
+        }
+
+        .row {
+            display: inline;
+        }
+        div p {
+            overflow:hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column side">
+            <h2>Side</h2>
+            <p>~~~~~~~~~~~~~~~~~~</p>
+        </div>
+        <div class="column middle">
+            <h2>Main Content</h2>
+            <p>~~~~~~~~~~~~~~~~~<br>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+        </div>
+        <div class="column side">
+            <h2>Side</h2>
+            <p>~~~~</p>
+        </div>
+    </div>
+</body>
+
+</html>

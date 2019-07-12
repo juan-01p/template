@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         .a1 {
@@ -16,6 +17,74 @@
         .a3 {
             margin: 0px 10px 10px 10px;
         }
+
+        #customers {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid rgb(190, 186, 186);
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr th,tr td {
+            padding: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            width: 200px;
+        }
+
+        ul li:nth-child(1) {
+            background: rgb(7, 192, 7);
+        }
+
+        ul li {
+            background: rgb(218, 214, 214);
+            margin: 5px 5px 5px 0px;
+            border-radius: 6px;
+
+        }
+
+        li a {
+            text-decoration: none;
+           
+        }
+        a{
+            color: black;
+        }
+        
+        .column{
+            box-sizing: border-box;
+            float: left;
+            
+            
+        }
+        .column.menu {
+            width: 25%;
+        }
+
+        .column.middle {
+            width: 50%;
+        }
+        .column.side{
+            width: 23%;
+            border:1px solid #3399ff;
+            background-color: #3399ff;
+            border-radius: 6px;
+            color: white;
+            height: 600px;
+            margin: 0px 0px 0px 2%;
+            
+        }
     </style>
 </head>
 
@@ -24,75 +93,86 @@
         <h1 class="a2">Welcome to My <a href="../main/index.html" style="color: black">HomePage</a></h1>
         <p class="a3"><small>Use the menu to select different Stylesheets</small></p>
     </div>
-    <ul>
-        <li><a href="">Stylesheet 1</a></li>
-        <li><a href="./stylesheet2.html">Stylesheet 2</a></li>
-        <li><a href="./stylesheet3.html">Stylesheet 3</a></li>
-        <li><a href="./stylesheet4.html">Stylesheet 4</a></li>
-        <li><a href="./stylesheetNo.html">No Stylesheet </a></li>
-    </ul>
-    <p>
-        <h1>Same Page Different Stylesheets</h1>
-    </p>
-    여러개 해보기 5개라네
-    5개링크:
-    <p>
-        <a href="">stylesheet1</a>
-        <a href="./stylesheet2.html">stylesheet2</a>
-        <a href="./stylesheet3.html">stylesheet3</a>
-        <a href="./stylesheet4.html">stylesheet4</a>
-        <a href="./stylesheetNo.html">No stylesheet</a>
-    </p>
+    <p></p>
+    <div class="column menu">
+        <ul>
+            <li><a href="">Stylesheet 1</a></li>
+            <li><a href="./stylesheet2.html">Stylesheet 2</a></li>
+            <li><a href="./stylesheet3.html">Stylesheet 3</a></li>
+            <li><a href="./stylesheet4.html">Stylesheet 4</a></li>
+            <li><a href="./stylesheetNo.html">No Stylesheet </a></li>
+        </ul>
+    </div>
 
-    <h2>Table</h2>
-    <table id="customers" border=1>
-        <tbody>
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
-            <tr class="alt">
-                <td>Berglunds snabbköp</td>
-                <td>Christina Berglund</td>
-                <td>Sweden</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-            <tr class="alt">
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-            </tr>
-            <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-            </tr>
-            <tr class="alt">
-                <td>Königlich Essen</td>
-                <td>Philip Cramer</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-            </tr>
-            <tr class="alt">
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="column middle">
+        <p>
+            <h1>Same Page Different Stylesheets</h1>
+        </p>
+        여러개 해보기 5개라네
+        5개링크:
+        <p>
+            <a href="">stylesheet1</a>
+            <a href="./stylesheet2.html">stylesheet2</a>
+            <a href="./stylesheet3.html">stylesheet3</a>
+            <a href="./stylesheet4.html">stylesheet4</a>
+            <a href="./stylesheetNo.html">No stylesheet</a>
+        </p>
+
+        <h2>Table</h2>
+        <table id="customers">
+            <tbody>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr class="alt">
+                    <td>Berglunds snabbköp</td>
+                    <td>Christina Berglund</td>
+                    <td>Sweden</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr class="alt">
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                </tr>
+                <tr class="alt">
+                    <td>Königlich Essen</td>
+                    <td>Philip Cramer</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                </tr>
+                <tr class="alt">
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="column side">
+        <h2>Side-Bar</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+    </div>
 </body>
+
 </html>
